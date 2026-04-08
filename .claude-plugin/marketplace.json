@@ -1,0 +1,19 @@
+{
+  "name": "alpic-plugin",
+  "owner": {
+    "name": "Alpic AI",
+    "email": "support@alpic.ai"
+  },
+  "metadata": {
+    "description": "Deploy and manage MCP servers on Alpic"
+  },
+  "plugins": [
+    {
+      "name": "alpic",
+      "source": "./plugins/alpic",
+      "description": "Skills for deploying and managing MCP servers with the Alpic CLI",
+      "version": "1.0.0",
+      "homepage": "https://alpic.ai/docs"
+    }
+  ]
+}
