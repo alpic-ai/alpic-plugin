@@ -2,7 +2,7 @@
   "name": "alpic-plugin",
   "version": "1.0.0",
   "private": true,
-  "description": "Claude Code plugin marketplace for the Alpic CLI",
+  "description": "Claude Code plugin marketplace for the Alpic and Skybridge",
   "repository": {
     "type": "git",
     "url": "https://github.com/alpic-ai/alpic-plugin.git"

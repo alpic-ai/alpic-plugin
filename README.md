@@ -6,15 +6,10 @@ Claude Code plugin marketplace for the [Alpic CLI](https://alpic.ai/docs) — de
 
 ```
 /plugin marketplace add alpic-ai/alpic-plugin
-/plugin install alpic@alpic-plugin
+/plugin install alpic@alpic
 ```
 
 The plugin activates automatically — no further setup required.
-
-## Prerequisites
-
-- [Alpic CLI](https://alpic.ai/docs): `npm install -g alpic`
-- Authenticated: `alpic login` (or `ALPIC_API_KEY` env var)
 
 ## Skills
 

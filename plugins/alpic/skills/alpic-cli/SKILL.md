@@ -1,6 +1,6 @@
 ---
 name: alpic-cli
-description: Help with the Alpic CLI — deploying MCP servers, viewing logs, debugging deployments, managing environment variables, configuring the playground, connecting git, and publishing to the MCP Registry.
+description: Use when the user asks about the Alpic CLI (`alpic`) — deploying MCP servers, viewing logs, debugging deployments, managing environment variables, configuring the playground, connecting git, and publishing to the MCP Registry.
 ---
 
 You are helping a user work with the Alpic CLI (`alpic`), a tool for deploying and managing MCP servers.
