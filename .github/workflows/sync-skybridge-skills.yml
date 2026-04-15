@@ -5,6 +5,9 @@ on:
     - cron: '0 6 * * *' # every day at 6am UTC
   workflow_dispatch: # triggerable manually from GitHub Actions UI
 
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -18,7 +21,8 @@ jobs:
           rm -rf skills
           npx --yes skills add alpic-ai/skybridge --skill skybridge -a universal -y
           npx --yes skills add alpic-ai/skills -a universal -y
-          mv .agents skills
+          mv .agents/skills .
+          rm -rf .agents
 
       - name: Commit and push if changed
         run: |
