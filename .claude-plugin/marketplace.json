@@ -12,7 +12,7 @@
       "name": "alpic",
       "source": "./plugins/alpic",
       "description": "Skills for deploying and managing MCP servers with the Alpic CLI",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "homepage": "https://docs.alpic.ai/cli"
     }
   ]
