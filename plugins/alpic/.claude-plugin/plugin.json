@@ -1,4 +1,8 @@
 {
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "alpic",
-  "description": "Deploy and manage MCP servers with the Alpic CLI"
+  "description": "Skills for deploying and managing MCP servers with the Alpic CLI",
+  "version": "1.0.1",
+  "author": { "name": "Alpic", "email": "support@alpic.ai" },
+  "homepage": "https://docs.alpic.ai/cli"
 }
