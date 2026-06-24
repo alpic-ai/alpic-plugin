@@ -1,35 +1,36 @@
-# Configuring the Playground
+# Playground
 
-The playground is a browser-based UI at `<server-url>/try` for interacting with the MCP server without writing code.
+Use the playground at `<server-url>/try` to test an MCP server in-browser, share
+it, showcase MCP Apps, and get client install snippets.
 
-Get the environment ID with `alpic environment list`.
+Primary docs:
 
-## Check status
+- Playground: `https://docs.alpic.ai/distribution/playground`
+- Testing: `https://docs.alpic.ai/testing/playground`
+- CLI status: `https://docs.alpic.ai/cli/playground-status`
+
+Get the environment ID:
+
+```bash
+alpic environment list
+```
+
+## Commands
 
 ```bash
 alpic playground status --environment-id <id>
-```
-
-## Enable / disable
-
-```bash
 alpic playground enable --environment-id <id>
 alpic playground disable --environment-id <id>
-```
-
-## Set name and description
-
-```bash
 alpic playground configure --name "My MCP Server" --description "Does useful things" --environment-id <id>
 ```
 
-Name max 100 chars, description max 500 chars.
+Name max 100 chars; description max 500 chars.
 
 ## Custom headers
 
-Headers let users supply values (e.g. API keys) forwarded with every playground request.
+Use headers for values forwarded with every playground request, such as API
+keys.
 
-Add:
 ```bash
 alpic playground headers add \
   --name "X-Api-Key" \
@@ -39,21 +40,17 @@ alpic playground headers add \
   --environment-id <id>
 ```
 
-- `--required` — user must fill this in before using the playground
-- `--secret` — value is masked in the UI
-- Name max 100 chars, description max 200 chars
-
-List / remove:
 ```bash
 alpic playground headers list --environment-id <id>
 alpic playground headers remove --environment-id <id>
 ```
 
+Header name max 100 chars; description max 200 chars.
+
 ## Example prompts
 
-Clickable suggestions shown in the playground UI (max 3 per environment).
+Clickable suggestions on the welcome screen, max 5 per environment.
 
-Add:
 ```bash
 alpic playground example-prompt add \
   --title "Hello" \
@@ -61,10 +58,9 @@ alpic playground example-prompt add \
   --environment-id <id>
 ```
 
-Title max 100 chars, prompt text max 500 chars.
-
-List / remove:
 ```bash
 alpic playground example-prompt list --environment-id <id>
 alpic playground example-prompt remove --environment-id <id>
 ```
+
+Title max 100 chars; prompt max 500 chars.

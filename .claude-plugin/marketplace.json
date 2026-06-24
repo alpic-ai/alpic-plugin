@@ -6,7 +6,7 @@
     "email": "support@alpic.ai"
   },
   "metadata": {
-    "description": "Deploy and manage MCP servers on Alpic"
+    "description": "Build MCP apps with Skybridge and ship them on Alpic Cloud"
   },
   "plugins": [
     {

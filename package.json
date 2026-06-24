@@ -2,7 +2,7 @@
   "name": "alpic-plugin",
   "version": "1.0.1",
   "private": true,
-  "description": "Claude Code plugin marketplace for the Alpic and Skybridge",
+  "description": "Codex plugin for building MCP apps with Skybridge and shipping them on Alpic Cloud",
   "repository": {
     "type": "git",
     "url": "https://github.com/alpic-ai/alpic-plugin.git"
