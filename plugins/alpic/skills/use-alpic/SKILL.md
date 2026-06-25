@@ -1,7 +1,6 @@
 ---
 name: use-alpic
-description: |
-  Use Alpic Cloud and the `alpic` CLI for deployed MCP apps/servers: deploys, builds, logs, debugging, environments, environment variables, tunnels, playgrounds, audits, auth, domains, IP restrictions, analytics, insights, versioning, and MCP Registry publishing.
+description: Use Alpic Cloud and the `alpic` CLI for deployed MCP apps/servers, including deploys, builds, logs, debugging, environments, environment variables, tunnels, playgrounds, audits, auth, domains, IP restrictions, analytics, insights, versioning, and MCP Registry publishing.
 ---
 
 # Alpic Cloud

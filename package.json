@@ -1,5 +1,5 @@
 {
-  "name": "alpic-plugin",
+  "name": "build-mcp-apps-plugin",
   "version": "1.0.1",
   "private": true,
   "description": "Codex plugin for building MCP apps with Skybridge and shipping them on Alpic Cloud",

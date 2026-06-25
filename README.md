@@ -1,6 +1,6 @@
-# Alpic plugin
+# Build MCP Apps plugin
 
-Codex plugin for building MCP apps with Skybridge and deploying, managing, debugging, securing, analyzing, distributing, and publishing them on Alpic Cloud.
+Codex plugin for building MCP apps with Skybridge and deploying, managing, debugging, securing, analyzing, distributing, and publishing them on Alpic Cloud. Uses Alpic branding and logo assets.
 
 ## Installation
 

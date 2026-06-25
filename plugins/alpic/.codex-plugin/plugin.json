@@ -1,5 +1,5 @@
 {
-  "name": "alpic",
+  "name": "build-mcp-apps",
   "version": "1.0.1",
   "description": "Build, deploy, debug, secure, analyze, distribute, and publish MCP apps with Skybridge and Alpic Cloud.",
   "author": {
@@ -21,7 +21,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Alpic",
+    "displayName": "Build MCP Apps",
     "shortDescription": "Build and deploy MCP apps",
     "longDescription": "Use Alpic to build MCP apps with Skybridge, deploy them to Alpic Cloud, debug deployments, run tunnels, configure build settings, environments, auth, custom domains, fixed outbound IPs, IP whitelisting, public endpoints, playground example prompts, environment variables, analytics, user insights, readiness audits, versioning, and publishing flows.",
     "developerName": "Alpic",
@@ -40,6 +40,7 @@
       "Debug my Alpic deployment."
     ],
     "brandColor": "#111827",
-    "screenshots": []
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
   }
 }

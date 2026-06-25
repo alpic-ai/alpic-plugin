@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
-  "name": "alpic",
+  "name": "build-mcp-apps",
   "owner": {
     "name": "Alpic",
     "email": "support@alpic.ai"
@@ -10,7 +10,7 @@
   },
   "plugins": [
     {
-      "name": "alpic",
+      "name": "build-mcp-apps",
       "source": "./plugins/alpic"
     }
   ]
