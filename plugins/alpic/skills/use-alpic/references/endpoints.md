@@ -26,7 +26,7 @@ Each environment receives its own unique domain.
 
 These appear only when relevant:
 
-- `/.well-known/protected-resource-metadata`: OAuth protected resource metadata.
+- `/.well-known/oauth-protected-resource`: OAuth protected resource metadata.
 - `/.well-known/oauth-authorization-server`: OAuth authorization server metadata when not delegated externally.
 - `/register`, `/authorize`, `/token`, `/callback`: Dynamic Client Registration proxy endpoints when DCR proxy is activated.
 

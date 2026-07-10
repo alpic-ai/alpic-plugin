@@ -32,8 +32,8 @@
       "Interactive"
     ],
     "websiteURL": "https://alpic.ai/",
-    "privacyPolicyURL": "https://alpic.ai/privacy",
-    "termsOfServiceURL": "https://alpic.ai/terms",
+    "privacyPolicyURL": "https://alpic.ai/legal/privacy",
+    "termsOfServiceURL": "https://alpic.ai/legal/terms",
     "defaultPrompt": [
       "Build an MCP app with Skybridge.",
       "Deploy this MCP app to Alpic Cloud.",
