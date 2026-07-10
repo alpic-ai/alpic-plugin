@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "alpic": {
+      "type": "http",
+      "url": "https://mcp.alpic.ai"
+    }
+  }
+}
