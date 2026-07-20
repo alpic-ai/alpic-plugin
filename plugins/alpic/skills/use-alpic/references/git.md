@@ -2,6 +2,11 @@
 
 Connects a GitHub repository to an Alpic project so pushes can trigger automatic deployments.
 
+Primary docs:
+
+- Connect git: `https://docs.alpic.ai/cli/git-connect`
+- Disconnect git: `https://docs.alpic.ai/cli/git-disconnect`
+
 ## Prerequisites
 
 - Directory must be linked to an Alpic project (done by `alpic deploy`)

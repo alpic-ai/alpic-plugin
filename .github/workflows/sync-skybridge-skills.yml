@@ -1,4 +1,4 @@
-name: Sync Skybridge skills
+name: Sync Skybridge references
 
 on:
   schedule:
@@ -16,13 +16,8 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Fetch skills
-        run: |
-          rm -rf plugins/alpic/skills
-          npx --yes skills add alpic-ai/skybridge --skill skybridge -a universal -y
-          npx --yes skills add alpic-ai/skills -a universal -y
-          mv .agents/skills plugins/alpic/skills
-          rm -rf .agents
+      - name: Sync upstream Skybridge skill
+        run: bash scripts/sync-skybridge-skill.sh
 
       - name: Commit and push if changed
         run: |

@@ -42,16 +42,15 @@ Extract the forwarding URL from Alpic tunnel output (e.g., `https://cool-marmot-
 
 ### Connect to ChatGPT
 Provide the user with these instructions to create the app in ChatGPT:
-1. Go to [Apps Settings](https://chatgpt.com/apps#settings/Connectors) → Create App
-2. Enter a name and description for the app
-3. Paste this URL: `{tunnel-url}/mcp`
-4. Set the appropriate Authentication scheme. In doubt, pick "No Authentication"
-5. Click Create
-6. Test by typing `@{app-name}` in a ChatGPT chat
+1. Enable Developer mode in ChatGPT: **Settings** → **Security and login** → **Developer mode**
+2. Open **Settings** → **Plugins**, or open the Plugins page and select the plus button
+3. Create a developer-mode app and enter a name and description
+4. Paste this MCP server URL: `{tunnel-url}/mcp`
+5. Configure authentication to match the server; select **No Authentication** only for an unprotected server
+6. Create the app, then start a new chat and invoke it with `@{app-name}`
 
 **Troubleshooting:**
-- 'Create App' button missing: ask user to enable Developer mode in Settings → Apps → Advanced Settings
-- 'Create App' button not working: confirm they have ChatGPT Plus, Pro, Business, or Enterprise/Edu plan
+- Plugin controls missing: confirm Developer mode is enabled and refresh the Plugins page
 
 
 ### Connect to Claude
@@ -62,4 +61,4 @@ Provide the user with these instructions to create the app in Claude:
 4. In Claude chat, click the `+` button and select `@{app-name}`
 
 **Troubleshooting:**
-- 'Add Custom Connector' button missing: confirm they have a Claude paid plan
+- 'Add Custom Connector' button missing: confirm that custom connectors are available for the user's Claude account

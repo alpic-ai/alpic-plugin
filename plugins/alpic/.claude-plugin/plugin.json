@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "alpic",
-  "description": "Skills for deploying and managing MCP servers with the Alpic CLI",
+  "name": "build-mcp-apps",
+  "description": "Skills for building MCP apps with Skybridge and shipping them on Alpic Cloud",
   "version": "1.0.1",
   "author": { "name": "Alpic", "email": "support@alpic.ai" },
   "homepage": "https://docs.alpic.ai/cli"

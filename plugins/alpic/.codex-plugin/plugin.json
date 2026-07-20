@@ -1,0 +1,46 @@
+{
+  "name": "build-mcp-apps",
+  "version": "1.0.1",
+  "description": "Build, deploy, debug, secure, analyze, distribute, and publish MCP apps with Skybridge and Alpic Cloud.",
+  "author": {
+    "name": "Alpic",
+    "email": "support@alpic.ai",
+    "url": "https://alpic.ai/"
+  },
+  "homepage": "https://docs.alpic.ai/",
+  "repository": "https://github.com/alpic-ai/alpic-plugin",
+  "license": "Apache-2.0",
+  "keywords": [
+    "alpic",
+    "skybridge",
+    "mcp",
+    "mcp-apps",
+    "chatgpt-apps",
+    "deployment",
+    "developer-tools"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Build MCP Apps",
+    "shortDescription": "Build and deploy MCP apps",
+    "longDescription": "Use Alpic to build MCP apps with Skybridge, deploy them to Alpic Cloud, debug deployments, run tunnels, configure build settings, environments, auth, custom domains, fixed outbound IPs, IP whitelisting, public endpoints, playground example prompts, environment variables, analytics, user insights, readiness audits, versioning, and publishing flows.",
+    "developerName": "Alpic",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Read",
+      "Write",
+      "Interactive"
+    ],
+    "websiteURL": "https://alpic.ai/",
+    "privacyPolicyURL": "https://alpic.ai/legal/privacy",
+    "termsOfServiceURL": "https://alpic.ai/legal/terms",
+    "defaultPrompt": [
+      "Build an MCP app with Skybridge.",
+      "Deploy this MCP app to Alpic Cloud.",
+      "Debug my Alpic deployment."
+    ],
+    "brandColor": "#111827",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png"
+  }
+}

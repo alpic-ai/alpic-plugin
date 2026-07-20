@@ -1,22 +1,17 @@
-# alpic-plugin
+# Build MCP Apps plugin
 
-Claude Code plugin marketplace for the [Alpic CLI](https://alpic.ai/docs) — deploy, manage, and debug MCP servers on the Alpic platform.
+Codex plugin for building MCP apps with Skybridge and deploying, managing, debugging, securing, analyzing, distributing, and publishing them on Alpic Cloud. Uses Alpic branding and logo assets.
 
 ## Installation
 
-```
-/plugin marketplace add alpic-ai/alpic-plugin
-/plugin install alpic@alpic
-```
-
-The plugin activates automatically — no further setup required.
+The plugin source lives at `plugins/alpic`.
 
 ## Skills
 
 | Skill | Covers |
 |-------|--------|
-| `alpic-cli` | Deploying MCP servers, viewing logs, debugging deployments, managing environment variables, configuring the playground, connecting git, and publishing to the MCP Registry |
-| `skybridge` | Creating and updating ChatGPT and MCP apps with the Skybridge framework — brainstorming ideas against UX guidelines, bootstrapping projects, implementing tools and views, debugging, running dev servers, and deploying and connecting apps to ChatGPT |
+| `build-mcp-apps` | Creating and updating MCP servers, MCP apps, and ChatGPT apps with the Skybridge framework |
+| `use-alpic` | Deploying apps, tunnels, logs and analytics, debugging deployments, environments, build configuration, environment variables, auth, custom domains, fixed outbound IPs, IP whitelisting, public endpoints, playground example prompts, user insights, readiness audits, versioning, git, and publishing |
 
 ## License
 
