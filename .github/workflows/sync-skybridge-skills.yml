@@ -19,11 +19,17 @@ jobs:
       - name: Sync upstream Skybridge skill
         run: bash scripts/sync-skybridge-skill.sh
 
+      - name: Package updated skills
+        run: |
+          if ! git diff --quiet -- plugins/alpic/skills/; then
+            bash scripts/package-plugin-skills.sh
+          fi
+
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add plugins/alpic/skills/
+          git add plugins/alpic/skills/ submissions/
           if git diff --staged --quiet; then
             echo "Already up to date, nothing to commit."
           else
