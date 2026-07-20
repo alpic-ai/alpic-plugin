@@ -1,8 +1,7 @@
 # Plugin Skills Submission - 2026-06-25
 
-This folder tracks the skill zip files prepared for the Alpic plugin submission.
+This folder tracks the skill bundle prepared for the Alpic plugin submission.
 
-- `build-mcp-apps-skill.zip`: skill for building MCP apps, MCP servers, and ChatGPT apps with Skybridge.
-- `use-alpic-skill.zip`: skill for operating deployed MCP apps and servers on Alpic Cloud.
+- `alpic-skills.zip`: final bundle containing both `build-mcp-apps` and `use-alpic` at the archive root.
 
-The temporary `chatgpt-app-submission.json` import file was removed because the submission flow requested skill zip uploads instead.
+The bundle contains only skills. The app, MCP server configuration, listing metadata, and branding are submitted separately through the ChatGPT plugin submission flow.
