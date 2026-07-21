@@ -56,6 +56,10 @@ Secure and distribute:
 
 - Prefer the `alpic` CLI for deploys, logs, environment variables,
   environments, git, tunnels, audits, playground settings, and publishing.
+- For agent-driven CLI work, prefer non-interactive commands after discovering
+  and confirming the required team, project, and environment IDs. Use
+  interactive prompts only when the user is intentionally driving the
+  selection or the CLI offers no equivalent flags.
 - Use the Alpic dashboard for custom domains, DCR client pools, fixed outbound
   IP, inbound IP whitelisting, visual analytics, and Beacon rendering checks.
 - Use the hosted Alpic MCP server/app for agent-driven project browsing, logs,
@@ -65,8 +69,11 @@ Secure and distribute:
 ## Guardrails
 
 - Store secrets in Alpic environment variables, not source files.
-- Confirm the target project and environment before changing production config,
-  auth, domains, IP restrictions, fixed outbound IP, or environment variables.
+- Discover and confirm the target team, project, and environment before a first
+  deployment or before changing production config, auth, domains, IP
+  restrictions, fixed outbound IP, or environment variables. Do not treat an
+  interactive picker as user confirmation when multiple plausible targets
+  exist.
 - Use build/deployment logs for deploy failures and runtime logs for live
   behavior.
 - Re-deploy after changing environment variables.
