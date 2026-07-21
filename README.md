@@ -1,10 +1,24 @@
-# Build MCP Apps plugin
+# Alpic plugin
 
-Codex plugin for building MCP apps with Skybridge and deploying, managing, debugging, securing, analyzing, distributing, and publishing them on Alpic Cloud. Uses Alpic branding and logo assets.
+Claude Code and Codex plugin for building MCP apps with Skybridge and deploying,
+managing, debugging, securing, analyzing, distributing, and publishing them on
+Alpic Cloud.
 
 ## Installation
 
 The plugin source lives at `plugins/alpic`.
+
+### Claude Code
+
+Add this repository as a marketplace, then install the plugin:
+
+```text
+/plugin marketplace add alpic-ai/alpic-plugin
+/plugin install build-mcp-apps@build-mcp-apps
+```
+
+See [`plugins/alpic/README.md`](plugins/alpic/README.md) for authentication,
+usage, data access, and removal instructions.
 
 ## Skills
 
@@ -15,4 +29,4 @@ The plugin source lives at `plugins/alpic`.
 
 ## License
 
-Apache-2.0
+[Apache-2.0](LICENSE)

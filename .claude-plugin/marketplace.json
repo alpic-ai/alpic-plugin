@@ -1,17 +1,21 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-marketplace.json",
   "name": "build-mcp-apps",
+  "description": "Build MCP apps with Skybridge, then deploy and operate them on Alpic Cloud",
   "owner": {
     "name": "Alpic",
     "email": "support@alpic.ai"
   },
   "metadata": {
-    "description": "Build MCP apps with Skybridge and ship them on Alpic Cloud"
+    "description": "Build MCP apps with Skybridge, then deploy and operate them on Alpic Cloud"
   },
   "plugins": [
     {
       "name": "build-mcp-apps",
-      "source": "./plugins/alpic"
+      "source": "./plugins/alpic",
+      "description": "Build MCP apps with Skybridge, then deploy, manage, debug, secure, and analyze them on Alpic Cloud.",
+      "category": "development",
+      "tags": ["mcp", "deployment", "developer-tools"]
     }
   ]
 }
