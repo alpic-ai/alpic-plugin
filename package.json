@@ -2,7 +2,10 @@
   "name": "build-mcp-apps-plugin",
   "version": "1.0.2",
   "private": true,
-  "description": "Claude Code and Codex plugin for building MCP apps with Skybridge and shipping them on Alpic Cloud",
+  "description": "Claude Code, Cursor, and Codex plugin for building MCP apps with Skybridge and shipping them on Alpic Cloud",
+  "scripts": {
+    "validate:cursor": "node scripts/validate-cursor-plugin.mjs"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/alpic-ai/alpic-plugin.git"

@@ -1,0 +1,34 @@
+name: Validate Cursor plugin
+
+on:
+  pull_request:
+    paths:
+      - ".cursor-plugin/**"
+      - "plugins/alpic/**"
+      - "scripts/validate-cursor-plugin.mjs"
+      - "package.json"
+      - ".github/workflows/validate-cursor-plugin.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - ".cursor-plugin/**"
+      - "plugins/alpic/**"
+      - "scripts/validate-cursor-plugin.mjs"
+      - "package.json"
+      - ".github/workflows/validate-cursor-plugin.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate Cursor plugin
+        run: npm run validate:cursor

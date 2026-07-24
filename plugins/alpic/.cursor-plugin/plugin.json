@@ -1,0 +1,26 @@
+{
+  "name": "alpic",
+  "displayName": "Alpic",
+  "version": "1.0.2",
+  "description": "Build MCP apps with Skybridge, then deploy, manage, debug, secure, and analyze them on Alpic Cloud.",
+  "author": {
+    "name": "Alpic",
+    "email": "support@alpic.ai"
+  },
+  "publisher": "Alpic",
+  "homepage": "https://docs.alpic.ai/",
+  "repository": "https://github.com/alpic-ai/alpic-plugin",
+  "license": "Apache-2.0",
+  "logo": "assets/logo.png",
+  "category": "Developer Tools",
+  "keywords": [
+    "alpic",
+    "skybridge",
+    "mcp",
+    "mcp-apps",
+    "deployment",
+    "observability"
+  ],
+  "skills": "skills",
+  "mcpServers": "mcp.json"
+}

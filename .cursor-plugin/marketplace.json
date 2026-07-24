@@ -1,0 +1,18 @@
+{
+  "name": "alpic",
+  "owner": {
+    "name": "Alpic",
+    "email": "support@alpic.ai"
+  },
+  "metadata": {
+    "description": "Build MCP apps with Skybridge, then deploy and operate them on Alpic Cloud.",
+    "version": "1.0.2"
+  },
+  "plugins": [
+    {
+      "name": "alpic",
+      "source": "./plugins/alpic",
+      "description": "Build MCP apps with Skybridge, then deploy, manage, debug, secure, and analyze them on Alpic Cloud."
+    }
+  ]
+}

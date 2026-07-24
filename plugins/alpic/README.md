@@ -14,7 +14,7 @@ them on Alpic Cloud.
 
 ## Requirements
 
-- A current version of Claude Code or another compatible plugin host.
+- A current version of Claude Code, Cursor, or another compatible plugin host.
 - An Alpic account for user-specific project, deployment, and analytics data.
 - The `alpic` CLI for workflows that deploy or configure projects from a local
   repository.
@@ -31,11 +31,25 @@ Add the repository marketplace and install the plugin:
 The technical plugin identifier remains `build-mcp-apps` for compatibility;
 Claude displays the plugin as **Alpic**.
 
+## Install in Cursor
+
+After publication, install the plugin from Cursor Agent chat:
+
+```text
+/add-plugin alpic
+```
+
+For local testing, link or copy this plugin directory to
+`~/.cursor/plugins/local/alpic`, then run **Developer: Reload Window**. Confirm
+that Alpic appears in Cursor settings and that its two skills and MCP server are
+enabled.
+
 ## Authentication
 
-When a workflow first accesses account-specific Alpic data, Claude may ask you
-to authenticate. Follow the sign-in flow and review the requested access before
-continuing. The plugin does not contain API keys or other shared credentials.
+When a workflow first accesses account-specific Alpic data, the plugin host may
+ask you to authenticate. Follow the OAuth sign-in flow and review the requested
+access before continuing. The plugin does not contain API keys or other shared
+credentials.
 
 CLI workflows use the authentication associated with your local `alpic` CLI.
 Run `alpic login` if the CLI reports that you are not authenticated.
@@ -54,8 +68,8 @@ The hosted connector sends requests to `https://mcp.alpic.ai`. Once you
 authenticate, it can access Alpic account data needed for the requested
 workflow, such as teams, projects, deployments, logs, and analytics.
 
-The bundled skills can also guide Claude Code to inspect the current project
-and run `alpic` CLI commands. Claude Code applies its normal tool-permission
+The bundled skills can also guide the agent to inspect the current project and
+run `alpic` CLI commands. The plugin host applies its normal tool-permission
 controls before local commands or file changes. Review the selected team,
 project, environment, and proposed changes before approving production actions.
 
@@ -80,6 +94,7 @@ From the repository root:
 claude plugin validate .
 claude plugin validate ./plugins/alpic --strict
 claude --plugin-dir ./plugins/alpic
+npm run validate:cursor
 ```
 
 ## Support
