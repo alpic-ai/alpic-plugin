@@ -1,0 +1,4 @@
+interface:
+  display_name: "Publish Internal Artifacts"
+  short_description: "Share private artifacts and internal sites"
+  default_prompt: "Use $publish-internal-artifacts to publish this artifact or internal site privately."

@@ -6,7 +6,7 @@
     "email": "support@alpic.ai"
   },
   "metadata": {
-    "description": "Deploy and manage MCP servers on Alpic"
+    "description": "Build, deploy, and privately share agent-created apps and artifacts"
   },
   "plugins": [
     {
