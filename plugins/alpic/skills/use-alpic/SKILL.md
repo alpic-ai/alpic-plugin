@@ -1,6 +1,6 @@
 ---
 name: use-alpic
-description: Use Alpic Cloud and the `alpic` CLI for deployed MCP apps/servers, including deploys, builds, logs, debugging, environments, environment variables, tunnels, playgrounds, audits, auth, domains, IP restrictions, analytics, insights, versioning, and MCP Registry publishing.
+description: Use Alpic Cloud and the `alpic` CLI for deployed MCP apps/servers, including deploys, builds, logs, debugging, environments, environment variables, tunnels, playgrounds, audits, auth, domains, IP restrictions, analytics, insights, versioning, MCP Registry publishing, and ChatGPT and Claude directory submission packages.
 ---
 
 # Alpic Cloud
@@ -51,6 +51,20 @@ Secure and distribute:
 - User intents and feedback capture: [insights.md](references/insights.md)
 - Host caching and submitted-version strategy: [versioning.md](references/versioning.md)
 - MCP Registry publishing: [publish.md](references/publish.md)
+- ChatGPT and Claude directory submission packages: [submissions.md](references/submissions.md)
+
+## CLI Setup
+
+- If `alpic` is not installed, run `npx alpic <command>` or install it with
+  `npm install -g alpic`.
+- Check authentication with `alpic whoami` before other commands. An
+  unauthenticated command exits with "Not authenticated" under
+  `--non-interactive` (the default when stdout is not a TTY); otherwise it
+  starts a browser login that times out after 5 minutes.
+- Without a browser, authenticate with an API key: the user creates one under
+  **API Keys** in their team on the Alpic dashboard and exports it as
+  `ALPIC_API_KEY`. When it is set, the CLI uses it over a stored login.
+- `alpic tunnel` needs `alpic login`; an API key cannot open a tunnel.
 
 ## Interface Choice
 

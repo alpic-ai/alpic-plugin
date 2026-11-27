@@ -106,6 +106,12 @@ alpic deployment inspect \
   --wait
 ```
 
+`alpic deploy` and `deployment inspect --wait` stop waiting after 15 minutes
+("Deployment aborted after 15 minutes" or "did not reach a final state within
+15 minutes"). That ends only the CLI's wait: the remote deployment keeps
+running. Check its status with `alpic deployment inspect --deployment-id <id>`
+before treating it as failed or deploying again.
+
 On failure, inspect build/deployment logs:
 
 ```bash

@@ -38,7 +38,7 @@ usage, data access, and removal instructions.
 | Skill | Covers |
 |-------|--------|
 | `build-mcp-apps` | Creating and updating MCP servers, MCP apps, and ChatGPT apps with the Skybridge framework |
-| `use-alpic` | Deploying apps, tunnels, logs and analytics, debugging deployments, environments, build configuration, environment variables, auth, custom domains, fixed outbound IPs, IP whitelisting, public endpoints, playground example prompts, user insights, readiness audits, versioning, git, and publishing |
+| `use-alpic` | Deploying apps, tunnels, logs and analytics, debugging deployments, environments, build configuration, environment variables, auth, custom domains, fixed outbound IPs, IP whitelisting, public endpoints, playground example prompts, user insights, readiness audits, versioning, git, MCP Registry publishing, and directory submission packages |
 
 ## License
 
